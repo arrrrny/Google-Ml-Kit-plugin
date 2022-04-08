@@ -6,7 +6,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
 part 'barcode_scanner.dart';
-part 'text_detector.dart';
 
 // To indicate the format of image while creating input image from bytes
 enum InputImageFormat {
@@ -79,16 +78,6 @@ class Vision {
   /// To limit the search model to specific [BarcodeFormat] pass list of [BarcodeFormat] as argument.
   BarcodeScanner barcodeScanner([List<BarcodeFormat>? formatList]) {
     return BarcodeScanner(formats: formatList);
-  }
-
-  /// Return an instance of [TextDetector].
-  TextDetector textDetector() {
-    return TextDetector._();
-  }
-
-  /// Returns an instance of Text Detector v2.
-  TextDetectorV2 textDetectorV2() {
-    return TextDetectorV2._();
   }
 }
 
