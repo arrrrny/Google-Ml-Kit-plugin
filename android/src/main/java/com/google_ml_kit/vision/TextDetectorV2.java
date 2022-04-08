@@ -13,10 +13,6 @@ import com.google.mlkit.vision.common.InputImage;
 import com.google.mlkit.vision.text.Text;
 import com.google.mlkit.vision.text.TextRecognition;
 import com.google.mlkit.vision.text.TextRecognizer;
-import com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions;
-import com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions;
-import com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions;
-import com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions;
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
 import com.google_ml_kit.ApiDetectorInterface;
 
@@ -162,17 +158,8 @@ public class TextDetectorV2 implements ApiDetectorInterface{
         closeDetector();
         Log.e("script lang", String.valueOf(script));
         scriptLang = script;
-        switch (script){
-            case 0 : textRecognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
-                     break;
-            case 1: textRecognizer = TextRecognition.getClient(new ChineseTextRecognizerOptions.Builder().build());
-                    break;
-            case 2: textRecognizer = TextRecognition.getClient(new DevanagariTextRecognizerOptions.Builder().build());
-                    break;
-            case 3: textRecognizer = TextRecognition.getClient(new JapaneseTextRecognizerOptions.Builder().build());
-                    break;
-            case 4: textRecognizer = TextRecognition.getClient(new KoreanTextRecognizerOptions.Builder().build());
-        }
+        textRecognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
+
     }
     private void closeDetector() {
         if(textRecognizer==null) return;
