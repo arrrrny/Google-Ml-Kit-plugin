@@ -9,25 +9,16 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 flutter plugin for google ml kit
                        DESC
-  s.homepage         = 'https://github.com/bharat-biradar/Google-Ml-Kit-plugin'
+  s.homepage         = 'https://github.com/arrrny/Google-Ml-Kit-plugin'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  # mlkit vision
-  s.dependency 'GoogleMLKit/FaceDetection', '~> 2.2.0'
-  s.dependency 'GoogleMLKit/ImageLabeling', '~> 2.2.0'
-  s.dependency 'GoogleMLKit/ImageLabelingCustom', '~> 2.2.0'
-  s.dependency 'GoogleMLKit/LinkFirebase', '~> 2.2.0'
   s.dependency 'GoogleMLKit/BarcodeScanning', '~> 2.2.0'
   s.dependency 'GoogleMLKit/TextRecognition', '~> 2.2.0'
-  s.dependency 'GoogleMLKit/PoseDetection', '~> 2.2.0'
-  s.dependency 'GoogleMLKit/PoseDetectionAccurate', '~> 2.2.0'
-  s.dependency 'GoogleMLKit/DigitalInkRecognition', '~> 2.2.0'
   # mlkit nlp
-  s.dependency 'GoogleMLKit/LanguageID', '~> 2.2.0'
   s.platform                = :ios, '10.0'
   s.ios.deployment_target   = '10.0'
   s.static_framework = true

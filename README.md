@@ -43,7 +43,7 @@ Since ML Kit does not support 32-bit architectures (i386 and armv7) ([Read mode]
 
 Go to Project > Runner > Building Settings > Excluded Architectures > Any SDK > armv7
 
-![](https://github.com/bharat-biradar/Google-Ml-Kit-plugin/blob/master/ima/build_settings_01.png)
+![](https://github.com/arrrny/Google-Ml-Kit-plugin/blob/master/ima/build_settings_01.png)
 
 Then your Podfile should look like this:
 
@@ -380,7 +380,7 @@ smartReply.close();
 
 #### Example app
 
-Look at this [example](https://github.com/bharat-biradar/Google-Ml-Kit-plugin/tree/master/example) to see the plugin in action.
+Look at this [example](https://github.com/arrrny/Google-Ml-Kit-plugin/tree/master/example) to see the plugin in action.
 
 ## Migrating from ML Kit for Firebase
 
@@ -390,11 +390,11 @@ When Migrating from ML Kit for Firebase read [this guide](https://developers.goo
 
 ### Android
 
-To reduce the apk size read more about it in issue [#26](https://github.com/bharat-biradar/Google-Ml-Kit-plugin/issues/26). Also look at [this](https://developers.google.com/ml-kit/tips/reduce-app-size).
+To reduce the apk size read more about it in issue [#26](https://github.com/arrrny/Google-Ml-Kit-plugin/issues/26). Also look at [this](https://developers.google.com/ml-kit/tips/reduce-app-size).
 
 ### iOS
 
-If you are using this plugin in your app and any other plugin that requires Firebase, there is a known issues you will encounter a dependency error when running `pod install`. To read more about it go to issue [#27](https://github.com/bharat-biradar/Google-Ml-Kit-plugin/issues/27).
+If you are using this plugin in your app and any other plugin that requires Firebase, there is a known issues you will encounter a dependency error when running `pod install`. To read more about it go to issue [#27](https://github.com/arrrny/Google-Ml-Kit-plugin/issues/27).
 
 ## Contributing
 

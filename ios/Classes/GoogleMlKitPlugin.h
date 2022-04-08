@@ -21,25 +21,8 @@
 @interface BarcodeScanner : NSObject <Handler>
 @end
 
-@interface CustomRemoteModelManager : NSObject <Handler>
-@end
-
-@interface DigitalInkRecogniser : NSObject <Handler>
-@end
-
-@interface FaceDetector : NSObject <Handler>
-@end
-
-@interface ImageLabeler : NSObject <Handler>
-@end
-
-@interface PoseDetector : NSObject <Handler>
-@end
 
 @interface TextRecognizer : NSObject <Handler>
-@end
-
-@interface LanguageIdentifier : NSObject <Handler>
 @end
 
 static FlutterError *getFlutterError(NSError *error) {
