@@ -13,9 +13,6 @@
     [handlers addObject:[[BarcodeScanner alloc] init]];
     [handlers addObject:[[TextRecognizer alloc] init]];
     
-    // Add nlp detectors
-    [handlers addObject:[[LanguageIdentifier alloc] init]];
-    
     instance.handlers = [NSMutableDictionary new];
     for (id<Handler> detector in handlers) {
         for (NSString *key in detector.getMethodsKeys) {
