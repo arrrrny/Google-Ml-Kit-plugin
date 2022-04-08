@@ -17,7 +17,6 @@ flutter plugin for google ml kit
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'GoogleMLKit/BarcodeScanning', '~> 2.2.0'
-  s.dependency 'GoogleMLKit/TextRecognition', '~> 2.2.0'
   # mlkit nlp
   s.platform                = :ios, '10.0'
   s.ios.deployment_target   = '10.0'

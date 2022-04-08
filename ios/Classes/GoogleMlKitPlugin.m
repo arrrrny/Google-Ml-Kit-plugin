@@ -10,9 +10,7 @@
     
     // Add vision detectors
     NSMutableArray *handlers = [NSMutableArray new];
-    [handlers addObject:[[BarcodeScanner alloc] init]];
-    [handlers addObject:[[TextRecognizer alloc] init]];
-    
+    [handlers addObject:[[BarcodeScanner alloc] init]];    
     instance.handlers = [NSMutableDictionary new];
     for (id<Handler> detector in handlers) {
         for (NSString *key in detector.getMethodsKeys) {

@@ -5,8 +5,6 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 
 import com.google_ml_kit.vision.BarcodeDetector;
-import com.google_ml_kit.vision.TextDetector;
-import com.google_ml_kit.vision.TextDetectorV2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,9 +22,7 @@ public class MlKitMethodCallHandler implements MethodChannel.MethodCallHandler {
     public MlKitMethodCallHandler(Context context) {
         List<ApiDetectorInterface> detectors = new ArrayList<ApiDetectorInterface>(
                 Arrays.asList(
-                        new BarcodeDetector(context),
-                        new TextDetector(context),
-                        new TextDetectorV2(context)
+                        new BarcodeDetector(context)
                 ));
 
         handlers = new HashMap<>();
